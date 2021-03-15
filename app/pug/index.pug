@@ -1,0 +1,27 @@
+doctype html
+html(lang="ru")
+    head
+        include modules/head
+    body 
+        include modules/header
+        section.catalog 
+            .container 
+                .catalog__flex 
+                    p.title__description К мероприятиям
+                    h2.section__title Настоящая красота здесь!
+                    ul.catalog__filter 
+                        li.catalog__filter_item 
+                            a(href="#").catalog__filter_href Свадьба
+                        li.catalog__filter_item 
+                            a(href="#").catalog__filter_href Мужу
+                        li.catalog__filter_item 
+                            a(href="#").catalog__filter_href Жене
+                        li.catalog__filter_item 
+                            a(href="#").catalog__filter_href Партеру
+                        li.catalog__filter_item 
+                            a(href="#").catalog__filter_href Коллекции
+                        li.catalog__filter_item 
+                            a(href="#").catalog__filter_href Редкость
+        include modules/footer
+        script(src="http://code.jquery.com/jquery-3.6.0.min.js")
+        script(src="js/main.js") 

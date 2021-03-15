@@ -1,0 +1,151 @@
+@import 'null.scss';
+@import 'fonts.scss';
+
+
+$title-font: 'Noto Serif';
+
+$default-font: 'Gilroy';
+
+$accent-color: #333333;
+$white: white;
+$grey: #D6D6D6;
+$bgc: #F9F9F9;
+$hard-grey: #979797;
+a{
+    font-family: $default-font;
+    font-weight: normal;
+    text-align: center;
+}
+.header{
+    background: url('../img/bgc.png') no-repeat top center / 100%;
+    height: 950px;
+    position: relative;
+}
+.container{
+    max-width: 1515px - 405px;
+    margin: 0 auto;
+}
+.menu__item{
+    a{
+        color: $white;
+        font-weight: normal;
+        font-size: 14px;
+    }
+}
+.menu__login{
+    a{
+        color: $white;
+        font-family: $default-font;
+        font-weight: normal;
+        font-size: 14px;
+    }
+}
+.header__flex{
+    display: flex;
+    align-items: center;
+    height: 77px;
+    padding-top: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu{
+    display: flex;
+    align-items: centers;
+}
+.menu__login{
+    display: flex;
+    align-items: center;
+}
+.cabinet{
+    display: flex;
+    align-items: center;
+}
+.menu__item:not(:last-child){
+    margin-right: 40px;
+}
+.search{
+    background: url('../img/search.svg') left center no-repeat;
+    padding-left: 50px;
+    margin-right: 40px;
+}
+.register{
+    margin-right: 40px;
+}
+.cabinet{
+    img:not(:last-child){
+        margin-right: 25px;
+    }
+}
+.logo__header{
+    margin: auto;
+}
+h1{
+    color: $white;
+    width: 100%;
+    text-align: center;
+    font-family: $title-font;
+    margin-top: 523px;
+}
+.btn{
+    background-color: $accent-color;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $default-font;
+    padding: 15px 35px;
+    transition: all 0.3s;
+    &:hover{
+        background-color: $hard-grey;
+        text-decoration: underline;
+    }
+}
+.btn__header{
+    margin-top: 50px;
+}
+.header__offer-img {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 30px;
+    height: 60px;
+}
+.title__description{
+    font-family: $default-font;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
+    color: $accent-color;
+    text-align: center;
+    padding-top: 100px;
+}
+.section__title{
+    font-family: $title-font;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+}
+.catalog__filter{
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
+    margin-top: 60px;
+}
+.catalog__filter_href{
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: $accent-color;
+    border: 1px solid $bgc;
+    padding: 17px 55px;
+}
+.catalog__filter_item{
+    &:not(:last-child){
+        margin-right: 18px;
+    }
+}
+.active-filter{
+    background-color: $accent-color;
+    color: $white;
+}
