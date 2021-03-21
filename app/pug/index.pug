@@ -4,24 +4,85 @@ html(lang="ru")
         include modules/head
     body 
         include modules/header
-        section.catalog 
-            .container 
-                .catalog__flex 
-                    p.title__description К мероприятиям
-                    h2.section__title Настоящая красота здесь!
-                    ul.catalog__filter 
-                        li.catalog__filter_item 
-                            a(href="#").catalog__filter_href Свадьба
-                        li.catalog__filter_item 
-                            a(href="#").catalog__filter_href Мужу
-                        li.catalog__filter_item 
-                            a(href="#").catalog__filter_href Жене
-                        li.catalog__filter_item 
-                            a(href="#").catalog__filter_href Партеру
-                        li.catalog__filter_item 
-                            a(href="#").catalog__filter_href Коллекции
-                        li.catalog__filter_item 
-                            a(href="#").catalog__filter_href Редкость
+        main.main 
+            section.catalog 
+                .container  
+                        p.title__description К мероприятиям
+                        h2.section__title Настоящая красота здесь!
+                        ul.catalog__filter 
+                            li.catalog__filter_item 
+                                a.catalog__filter_href Свадьба
+                            li.catalog__filter_item 
+                                a.catalog__filter_href Мужу
+                            li.catalog__filter_item 
+                                a.catalog__filter_href Жене
+                            li.catalog__filter_item 
+                                a.catalog__filter_href Партеру
+                            li.catalog__filter_item 
+                                a.catalog__filter_href Коллекции
+                            li.catalog__filter_item 
+                                a.catalog__filter_href Редкость
+                        .catalog__category
+                            a(href="#").catalog__item 
+                                img(src="img/Rectangle 5.jpg", alt="")
+                                p.catalog__item_deskription Кольца
+                            a(href="#").catalog__item 
+                                img(src="img/Rectangle 4.jpg", alt="")
+                                p.catalog__item_deskription Серьги
+                            a(href="#").catalog__item 
+                                img(src="img/Rectangle 3.jpg", alt="")
+                                p.catalog__item_deskription Подвески
+                            a(href="#").catalog__item 
+                                img(src="img/Rectangle 2.jpg", alt="")
+                                p.catalog__item_deskription Запонки
+                            a(href="#").catalog__item 
+                                img(src="img/Rectangle.jpg", alt="")
+                                p.catalog__item_deskription Браслеты
+                            a(href="#").catalog__item 
+                                img(src="img/Rectangle 1.jpg", alt="")
+                                p.catalog__item_deskription Часы
+            section.map 
+                .container
+                    .map__flex  
+                        p.title__description.white Не знаете, что выбрать?
+                        h2.section__title.white Посетите наши салоны в Москве
+                        p.map__description.white Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor vitae pellentesque egestas quam pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec pretium id dignissim. Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices imperdiet lectus nulla tempus. Pharetra lorem sem purus nisi libero viverra ipsum.
+                        a(href="#").btn.btn__map наши салоны
+            section.blog 
+                .container 
+                    p.title__description Полезные статьи
+                    h2.section__title Лучшие советы по подбору дорогих подарков
+                    .blog__category
+                        a.blog__item(href="")
+                            img(src="img/blog1.jpg", alt="") 
+                            p.blog__item_deskription Как выбрать часы для своей будущей жены
+                        a.blog__item(href="")
+                            img(src="img/blog2.jpg", alt="") 
+                            p.blog__item_deskription Запонки для мужа: 7 ключевых правил покупки аксессуара
+                        a.blog__item(href="")
+                            img(src="img/blog3.jpg", alt="") 
+                            p.blog__item_deskription Как выбрать обручальные кольца молодоженам
+                        a.btn.btn__blog читать наш блог
+            section.gallery 
+                .container  
+                    p.title__description #ojjo_jewerly
+                    h2.section__title Мы в социальных сетях
+                    .gallery__flex 
+                        a(href="").gallery__img
+                            img(src="img/img--hover.jpg", alt="")
+                            span 
+                        a(href="").gallery__img
+                            img(src="img/gallery__image.jpg", alt="")
+                        a(href="").gallery__img
+                            img(src="img/gallery__image1.jpg", alt="")
+                        a(href="").gallery__img
+                            img(src="img/gallery__image2.jpg", alt="")
+                        a(href="").gallery__img
+                            img(src="img/gallery__image3.jpg", alt="")
+                        a(href="").gallery__img
+                            img(src="img/gallery__image4.jpg", alt="")
+                            span 
+            include modules/newslatter
         include modules/footer
         script(src="http://code.jquery.com/jquery-3.6.0.min.js")
         script(src="js/main.js") 

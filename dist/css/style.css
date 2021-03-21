@@ -191,7 +191,8 @@ select {
 a {
   font-family: "Gilroy";
   font-weight: normal;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
 
 .header {
   background: url("../img/bgc.png") no-repeat top center/100%;
@@ -244,9 +245,6 @@ a {
 .register {
   margin-right: 40px; }
 
-.cabinet img:not(:last-child) {
-  margin-right: 25px; }
-
 .logo__header {
   margin: auto; }
 
@@ -282,6 +280,8 @@ h1 {
   font-family: "Gilroy";
   font-weight: normal;
   font-size: 21px;
+  width: 100%;
+  text-align: center;
   line-height: 140%;
   color: #333333;
   text-align: center;
@@ -292,6 +292,7 @@ h1 {
   margin-top: 15px;
   font-weight: bold;
   font-size: 30px;
+  margin-bottom: 60px;
   line-height: 41px;
   text-align: center; }
 
@@ -299,7 +300,7 @@ h1 {
   display: flex;
   align-items: center;
   margin-bottom: 55px;
-  margin-top: 60px; }
+  justify-content: space-between; }
 
 .catalog__filter_href {
   font-size: 18px;
@@ -308,11 +309,169 @@ h1 {
   letter-spacing: 0.1em;
   color: #333333;
   border: 1px solid #F9F9F9;
-  padding: 17px 55px; }
+  padding: 17px 40px;
+  cursor: pointer; }
+  .catalog__filter_href:hover {
+    background-color: #333333;
+    color: white; }
+    .catalog__filter_href:hover:focus {
+      background-color: #333333;
+      color: white; }
 
 .catalog__filter_item:not(:last-child) {
   margin-right: 18px; }
 
-.active-filter {
+.acount {
+  background: url(../img/account.svg) no-repeat center center/100%;
+  width: 20px;
+  height: 20px;
+  margin-right: 25px; }
+
+.whislist {
+  background: url(../img/like.svg) no-repeat center center/100%;
+  width: 20px;
+  height: 20px; }
+
+.active {
   background-color: #333333;
   color: white; }
+
+.catalog__category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 120px; }
+
+.catalog__item {
+  margin-bottom: 30px;
+  position: relative; }
+
+.catalog__item_deskription {
+  position: absolute;
+  font-family: "Gilroy";
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  bottom: 40px;
+  width: 100%;
+  text-align: center; }
+
+.map {
+  background: url(../img/bg.png) center center no-repeat;
+  padding-bottom: 100px; }
+
+.white {
+  color: white; }
+
+.map__description {
+  margin-top: 45px;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 140%;
+  text-align: center;
+  flex: 0 0 730px; }
+
+.map__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 730px;
+  margin: 0 auto; }
+
+.btn__map {
+  margin-top: 60px;
+  background: white;
+  border: 1px solid #333333;
+  color: #333333;
+  flex: 0 0 224px; }
+
+.blog__category {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.blog__item {
+  position: relative; }
+
+.blog__item_deskription {
+  max-width: 204px;
+  text-align: center;
+  bottom: 35px;
+  left: 25%;
+  color: white;
+  position: absolute; }
+
+.btn__blog {
+  margin-top: 60px; }
+
+.blog {
+  padding-bottom: 100px; }
+
+.gallery__flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.gallery__img {
+  position: relative; }
+  .gallery__img:hover span {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 40%;
+    left: 40%;
+    background: url(../img/play.png); }
+  .gallery__img span {
+    display: none; }
+
+.gallery {
+  padding-bottom: 150px; }
+
+.newslatter {
+  background: url(../img/bg.png) no-repeat;
+  padding-bottom: 100px; }
+
+.newslatter__item__description {
+  color: white;
+  font-family: "Gilroy";
+  background: url(../img/subscribe__icon.svg) no-repeat left;
+  padding-left: 40px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 140%; }
+
+.newslatter__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%; }
+
+.newslatter__form {
+  width: 50%;
+  border: 1px solid white; }
+  .newslatter__form form {
+    margin: 14px 15px;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 85px; }
+    .newslatter__form form input {
+      border: 1px solid #D6D6D6;
+      padding: 15px 35px;
+      font-family: "Gilroy";
+      text-transform: uppercase; }
+      .newslatter__form form input:focus {
+        outline: none; }
+
+.newslatter__flex {
+  display: flex;
+  align-items: center; }
+
+.btn__form {
+  border: none !important;
+  padding: 15px 35px;
+  margin-left: 15px;
+  box-sizing: border-box; }
